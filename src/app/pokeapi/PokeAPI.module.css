@@ -1,0 +1,53 @@
+/* app/pokeapi/PokeAPI.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ocupa toda la altura de la ventana */
+    background-color: white; /* Fondo blanco */
+    font-family: Arial, sans-serif; /* Fuente */
+    color: black; /* Asegúrate de que el texto sea negro */
+  }
+  
+  .form {
+    margin-bottom: 20px; /* Espacio inferior para el formulario */
+  }
+  
+  .input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #0070f3; /* Color de borde azul */
+    border-radius: 4px;
+    margin-right: 10px; /* Espacio a la derecha del input */
+  }
+  
+  .button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0070f3; /* Fondo azul */
+    color: white; /* Texto blanco */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #005bb5; /* Color más oscuro al pasar el ratón */
+  }
+  
+  .pokedex {
+    border: 2px solid #0070f3; /* Borde azul */
+    border-radius: 10px; /* Esquinas redondeadas */
+    padding: 20px;
+    text-align: center; /* Centrar el texto */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra para dar efecto de profundidad */
+    background-color: #f9f9f9; /* Fondo claro para la Pokédex */
+  }
+  
+  .image {
+    width: 150px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+  }
+  
