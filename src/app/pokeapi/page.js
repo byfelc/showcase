@@ -2,11 +2,11 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import styles from './PokeAPI.module.css'; // Asegúrate de tener este archivo CSS
+import styles from './PokeAPI.module.css';
 
 export default function PokeAPIComponent() {
   const [pokemon, setPokemon] = useState(null);
-  const [searchTerm, setSearchTerm] = useState("pikachu"); // Pokémon por defecto
+  const [searchTerm, setSearchTerm] = useState("pikachu");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
@@ -27,12 +27,12 @@ export default function PokeAPIComponent() {
   };
 
   useEffect(() => {
-    fetchPokemon(); // Cargar el Pokémon por defecto al montar el componente
+    fetchPokemon();
   }, []);
 
   const handleSearch = (e) => {
     e.preventDefault();
-    fetchPokemon(); // Llama a la función para buscar el Pokémon cuando se envía el formulario
+    fetchPokemon();
   };
 
   return (
@@ -42,18 +42,18 @@ export default function PokeAPIComponent() {
         <input
           type="text"
           value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)} // Actualiza el término de búsqueda
+          onChange={(e) => setSearchTerm(e.target.value)}
           placeholder="Search for a Pokémon..."
           className={styles.input}
         />
-        <button type="submit" className={styles.button}>Search</button> {/* Botón para enviar la búsqueda */}
+        <button type="submit" className={styles.button}>Search</button>
       </form>
 
       {loading && <p>Loading...</p>}
       {error && <p>Error: {error}</p>}
       {pokemon && (
         <div className={styles.pokedex}>
-          <h2>Nombre: {pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</h2> {/* Cambiado a 'Nombre' */}
+          <h2>Nombre: {pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</h2> {}
           <img src={pokemon.sprites.front_default} alt={pokemon.name} className={styles.image} />
           <p>Height: {pokemon.height}</p>
           <p>Weight: {pokemon.weight}</p>

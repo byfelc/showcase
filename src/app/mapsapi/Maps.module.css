@@ -1,31 +1,31 @@
-/* app/maps/Maps.module.css */
+
 
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centrar el contenido horizontalmente */
-    justify-content: center; /* Centrar el contenido verticalmente */
-    min-height: 100vh; /* Ocupa toda la altura de la ventana */
-    background-color: white; /* Fondo blanco */
-    font-family: Arial, sans-serif; /* Fuente */
-    color: black; /* Color de texto negro */
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: white;
+    font-family: Arial, sans-serif;
+    color: black;
   }
   
   .mapContainer {
-    margin-bottom: 20px; /* Espacio inferior para el mapa */
+    margin-bottom: 20px;
   }
   
   .button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #0070f3; /* Fondo azul */
-    color: white; /* Texto blanco */
+    background-color: #0070f3;
+    color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
   }
   
   .button:hover {
-    background-color: #005bb5; /* Color más oscuro al pasar el ratón */
+    background-color: #005bb5;
   }
   

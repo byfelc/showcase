@@ -1,8 +1,8 @@
-// app/dogimage/page.js
+
 "use client";
 
 import { useState, useEffect } from "react";
-import styles from './DogImage.module.css'; // Asegúrate de tener este archivo CSS
+import styles from './DogImage.module.css';
 
 export default function DogImageComponent() {
   const [dogImage, setDogImage] = useState(null);
@@ -26,11 +26,11 @@ export default function DogImageComponent() {
   };
 
   useEffect(() => {
-    fetchDogImage(); // Cargar la imagen de perro al montar el componente
+    fetchDogImage();
   }, []);
 
   const handleFetchNewDog = () => {
-    fetchDogImage(); // Generar una nueva imagen de perro al hacer clic en el botón
+    fetchDogImage();
   };
 
   return (
@@ -45,7 +45,7 @@ export default function DogImageComponent() {
         </div>
       )}
       
-      <button onClick={handleFetchNewDog} className={styles.button}>Get Another Dog</button> {/* Botón para obtener otra imagen */}
+      <button onClick={handleFetchNewDog} className={styles.button}>Get Another Dog</button> {}
     </div>
   );
 }
